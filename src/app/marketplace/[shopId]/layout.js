@@ -19,7 +19,7 @@ export default function ShopLayout({ children, params: { shopId } }) {
       </button>
       {children}
 
-      <ShopPage shops={shops} />
+      <ShopPage shop={shops} />
     </div>
   )
 }
