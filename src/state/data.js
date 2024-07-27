@@ -2,7 +2,7 @@ export const shopsData = [
   {
     id: 1,
     name: "Waterloo Market",
-    image: "/stores/a.jpg",
+    image: "/shops/a.jpg",
     location: "Waterloo, ON",
     description: "The best market in town!",
     rating: 4.5,
@@ -11,7 +11,7 @@ export const shopsData = [
   {
     id: 2,
     name: "Kitchener Karrots",
-    image: "/stores/b.jpg",
+    image: "/shops/b.jpg",
     location: "Kitchener, ON",
     description: "The best market in town!",
     rating: 4.5,
@@ -20,7 +20,7 @@ export const shopsData = [
   {
     id: 3,
     name: "Cambridge Tomato Town",
-    image: "/stores/c.jpg",
+    image: "/shops/c.jpg",
     location: "Cambridge, ON",
     description: "The best market in town!",
     rating: 4.5,
@@ -32,7 +32,7 @@ export const otherShopsData = [
   {
     id: 4,
     name: "Guelph Farmhouse",
-    image: "/stores/d.jpg",
+    image: "/shops/d.jpg",
     location: "Guelph, ON",
     description: "The best market in town!",
     rating: 4.5,
@@ -41,7 +41,7 @@ export const otherShopsData = [
   {
     id: 5,
     name: "Toronto Local",
-    image: "/stores/e.jpg",
+    image: "/shops/e.jpg",
     location: "Toronto, ON",
     description: "The best market in town!",
     rating: 4.5,

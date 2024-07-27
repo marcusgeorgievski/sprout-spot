@@ -1,9 +1,9 @@
-import { stores } from "@/state/data"
+import { shopsData } from "@/state/data"
 import Image from "next/image"
 import ShopPage from "./shop-page"
 
 export default function ShopLayout({ children, params: { shopId } }) {
-  const store = stores.find((store) => store.id == shopId)
+  const shops = shopsData.find((store) => store.id == shopId)
   console.log(store)
   return (
     <div>
@@ -19,7 +19,7 @@ export default function ShopLayout({ children, params: { shopId } }) {
       </button>
       {children}
 
-      <ShopPage store={store} />
+      <ShopPage shops={shops} />
     </div>
   )
 }

@@ -50,14 +50,14 @@ export default function MarketPage() {
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search for stores"
+          placeholder="Search for local shops"
           className="w-full max-w-md px-3 py-1 border rounded-lg focus:outline-slate-400 border-slate-300 bg-slate-50"
         />
       </div>
 
       {/* Near me */}
       <h2 className="mb-5 text-3xl font-semibold">
-        Stores near <span className="text-green-500">Waterloo</span>
+        Shops near <span className="text-green-500">Waterloo</span>
       </h2>
 
       <div className="grid grid-cols-1 gap-6 mx-auto w-fit sm:grid-cols-2 lg:grid-cols-3">
@@ -72,7 +72,7 @@ export default function MarketPage() {
 
       {/* Farther away */}
       <h2 className="pt-16 mb-5 text-3xl font-semibold">
-        Stores farther <span className="text-green-500">from you</span>
+        Shops farther <span className="text-green-500">from you</span>
       </h2>
 
       <div className="grid grid-cols-1 gap-6 mx-auto w-fit sm:grid-cols-2 lg:grid-cols-3">

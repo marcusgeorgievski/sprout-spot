@@ -5,6 +5,7 @@ import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import Cart from "./cart"
 import Sprouty from "./sprouty"
+import Dropdown from "./dropdown"
 
 export default function Header() {
   return (
@@ -13,13 +14,17 @@ export default function Header() {
         {/* Logo */}
         <Link href={"/"} className="flex items-center gap-2">
           <Image src="/assets/logo.png" alt="logo" width={40} height={40} />
-          <Sprouty className="text-xl font-bold text-[#C2272E]">
+          <Sprouty className="text-xl font-bold text-[#C2272E] whitespace-nowrap text-nowrap">
             Sprout Spot
           </Sprouty>
+
+          <div className="sm:hidden">
+            <Dropdown />
+          </div>
         </Link>
 
         {/* Navigation */}
-        <nav className="flex gap-10">
+        <nav className="hidden gap-10 sm:flex">
           <NavItem href="/">Home</NavItem>
           <NavItem href="/marketplace">Marketplace</NavItem>
           <NavItem href="/contact">Dashboard</NavItem>
