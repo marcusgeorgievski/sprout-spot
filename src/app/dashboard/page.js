@@ -26,29 +26,29 @@ export default function Dashboard() {
                         </li>
                         <li>
                             <Link 
-                            href={"/fav"} 
+                            href={"/dashboard/fav"} 
                             className="hover:text-green-600"
                             >
                                 Favourites
                             </Link>
                         </li>
                         <li>
-                            <Link href={"/wallet"} className="hover:text-green-600">
+                            <Link href={"/dashboard/wallet"} className="hover:text-green-600">
                                 Wallet
                             </Link>
                         </li>
                         <li>
-                            <Link href={"/friends"} className="hover:text-green-600">
+                            <Link href={"/dashboard/friends"} className="hover:text-green-600">
                                 Invite Friends
                             </Link>
                         </li>
                         <li>
-                            <Link href={"/bus"} className="hover:text-green-600">
+                            <Link href={"/dashboard/bus"} className="hover:text-green-600">
                                 Register for a Business Account
                             </Link>
                         </li>
                         <li>
-                            <Link href={"/signOut"} className="hover:text-green-600">
+                            <Link href={"/dashboard/signOut"} className="hover:text-green-600">
                                 Sign Out
                             </Link>
                         </li>
