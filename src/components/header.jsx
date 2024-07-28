@@ -13,7 +13,7 @@ export default function Header() {
       <div className="max-w-[1100px] mx-auto h-[58px] px-4 flex items-center justify-between">
         {/* Logo */}
         <Link href={"/"} className="flex items-center gap-2">
-          <Image src="/assets/logo.png" alt="logo" width={40} height={40}/>
+          <Image src="/assets/logo.png" alt="logo" width={40} height={40} />
           <Sprouty className="text-xl font-bold text-[#C2272E] whitespace-nowrap text-nowrap">
             Sprout Spot
           </Sprouty>
@@ -31,7 +31,13 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-slate-300"></div>
+          <Image
+            src={"/assets/p.jpg"}
+            width={20}
+            height={20}
+            alt="cart"
+            className="object-cover w-8 h-8 rounded-full"
+          />
           <Cart />
         </div>
       </div>
