@@ -48,3 +48,43 @@ export const otherShopsData = [
     distance: 100.0,
   },
 ]
+
+// array of products with item, name, price, image, and description, and id
+
+export const productsData = [
+  {
+    id: 1,
+    name: "Tomato",
+    price: 2.99,
+    image: "/products/a.jpg",
+    description: "Fresh and juicy tomatoes.",
+  },
+  {
+    id: 2,
+    name: "Carrot",
+    price: 1.99,
+    image: "/products/b.jpg",
+    description: "Sweet and crunchy carrots.",
+  },
+  {
+    id: 3,
+    name: "Apple",
+    price: 0.99,
+    image: "/products/c.jpg",
+    description: "Crisp and delicious apples.",
+  },
+  {
+    id: 4,
+    name: "Orange",
+    price: 1.49,
+    image: "/products/d.jpg",
+    description: "Juicy and sweet oranges.",
+  },
+  {
+    id: 5,
+    name: "Cabbage",
+    price: 0.49,
+    image: "/products/e.jpg",
+    description: "Nutritious and delicious cabbages.",
+  },
+]

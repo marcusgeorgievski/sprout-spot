@@ -14,6 +14,7 @@ export const useUser = create((set, get) => ({
     set((state) => ({
       favourites: state.favourites.filter((s) => s.id !== shop.id),
     })),
+  isShopInFavourites: (shop) => get().favourites.some((s) => s.id === shop.id),
 
   addToCart: (product) => set((state) => ({ cart: [...state.cart, product] })),
   removeFromCart: (product) =>
@@ -25,13 +26,10 @@ export const useUser = create((set, get) => ({
 
   // Cart
   get totalCartItems() {
-    return get().cart.reduce((acc, product) => acc + product.quantity, 0)
+    return get().cart.reduce((acc, product) => acc + 1, 0)
   },
   get totalCartPrice() {
-    return get().cart.reduce(
-      (acc, product) => acc + product.price * product.quantity,
-      0,
-    )
+    return get().cart.reduce((acc, product) => acc + product.price, 0)
   },
 
   // Order

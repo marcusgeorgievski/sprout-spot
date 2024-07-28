@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <div>
       <div className="py-8 mb-[80px]">
-        <Hero2 />
+        <Hero />
       </div>
 
       <div className="py-20">
