@@ -95,7 +95,7 @@ function Hero2() {
           </p>
 
           <Link
-            href={"/marektplace"}
+            href={"/marketplace"}
             className="inline-block px-6 py-1 text-green-700 bg-green-300 rounded-lg font-lg"
           >
             Explore

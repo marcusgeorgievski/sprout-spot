@@ -27,7 +27,7 @@ export default function Header() {
         <nav className="hidden gap-10 sm:flex">
           <NavItem href="/">Home</NavItem>
           <NavItem href="/marketplace">Marketplace</NavItem>
-          <NavItem href="/contact">Dashboard</NavItem>
+          <NavItem href="/dashboard">Dashboard</NavItem>
         </nav>
 
         <div className="flex items-center gap-2">

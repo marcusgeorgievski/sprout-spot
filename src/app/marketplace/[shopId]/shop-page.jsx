@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function ShopPage({ shop }) {
   return (
-    <di className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
       <div>
         <Image
           src={shop.image}
@@ -21,6 +21,8 @@ export default function ShopPage({ shop }) {
 
         <p className=" text-slate-700">{shop.description}</p>
       </div>
-    </di>
+      
+      
+    </div>
   )
 }
